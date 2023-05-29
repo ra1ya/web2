@@ -1,0 +1,36 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+  
+ <h1>@ViewData["Title"]</h1>
+    
+   
+<div class="text-center">
+    <h1 class="display-4">Enter your name</h1>
+
+
+
+
+    <form method="post">
+        name:<input type="text"  id="name" name="name" required/>
+        <button type="submit" >تنفيذ</button>
+        </form>
+
+        </div>
+    
+
+       
+     
+ 
+          
+   @if (ViewBag.ReversedName!=null)
+    {
+        <h2> your name Revers is @ViewBag.ReversedName
+            </h2>
+            
+            
+    }
+    
+
